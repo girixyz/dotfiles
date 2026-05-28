@@ -1,0 +1,36 @@
+include "./cfg/animation.kdl"
+include "./cfg/autostart.kdl"
+include "./cfg/keybinds.kdl"
+include "./cfg/input.kdl"
+include "./cfg/display.kdl"
+include "./cfg/layout.kdl"
+include "./cfg/rules.kdl"
+include "./cfg/misc.kdl"
+
+cursor {
+    xcursor-theme "Bibata-Modern-Ice"
+    xcursor-size 19
+}
+
+screenshot-path "/home/girishan/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+//spawn-at-startup "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:screen-recorder" "startReplay"
+environment {
+    XDG_MENU_PREFIX "arch-"
+}
+
+window-rule {
+    match app-id="^Alacritty$"
+    background-effect {
+        blur true
+    }
+}
+
+
+
+//qs -c noctalia-shell ipc call plugin:screen-recorder startReplay
+
+//other edits
+// change themes:
+// 1. cd qylock
+// 2. chmod +x sddm.sh && ./sddm.sh
+

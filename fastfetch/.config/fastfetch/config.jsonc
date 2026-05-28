@@ -1,0 +1,49 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "display": {
+        "separator": "  "
+  },
+  "logo": {
+        "type": "auto",
+        "source": "/home/girishan/.config/fastfetch/ascii/frog.txt",
+        "padding": {
+            "top": 0,
+            "left": 4,
+            "right": 8
+        },
+        "color": {
+            "1": "green",
+            "2": "white",
+            "3": "38;2;115;140;115"
+        }
+  },
+  "modules": [
+        {
+            "type": "os",
+            "key": "󰣇",
+            "keyColor": "38;2;115;140;115"
+        },
+        {
+            "type": "kernel",
+            "key": "",
+            "keyColor": "38;2;115;140;115"
+        },
+{
+            "type": "bios",
+            "key": "󰍛",
+            "keyColor": "38;2;115;140;115"
+        },
+        {
+            "type": "wm",
+            "key": "󰖲",
+            "keyColor": "38;2;115;140;115"
+        },
+{
+            "type": "battery",
+            "key": "󰂎",
+            "keyColor": "38;2;115;140;115"
+        },
+
+    ]
+
+}
