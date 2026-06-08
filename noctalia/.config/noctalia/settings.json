@@ -42,7 +42,7 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 1,
+        "backgroundOpacity": 0.66,
         "barType": "simple",
         "capsuleColorKey": "none",
         "capsuleOpacity": 1,
@@ -50,7 +50,7 @@
         "density": "default",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": true,
-        "fontScale": 1.23,
+        "fontScale": 1.12,
         "frameRadius": 12,
         "frameThickness": 8,
         "hideOnOverview": false,
@@ -78,7 +78,7 @@
         "showCapsule": false,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
-        "useSeparateOpacity": false,
+        "useSeparateOpacity": true,
         "widgetSpacing": 6,
         "widgets": {
             "center": [
@@ -187,6 +187,13 @@
                     "id": "NotificationHistory",
                     "showUnreadBadge": true,
                     "unreadBadgeColor": "primary"
+                },
+                {
+                    "displayMode": "onhover",
+                    "iconColor": "none",
+                    "id": "Volume",
+                    "middleClickCommand": "pwvucontrol || pavucontrol",
+                    "textColor": "none"
                 },
                 {
                     "applyToAllMonitors": false,
@@ -684,6 +691,20 @@
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
+            {
+                "appearance": "dark",
+                "colorScheme": "Ayu",
+                "darkMode": true,
+                "generationMethod": "tonal-spot",
+                "paletteColors": [
+                    "#99d680",
+                    "#bccbb1",
+                    "#a0cfd1",
+                    "#ffb4ab"
+                ],
+                "path": "/home/girishan/Pictures/Wallpapers/wallhaven-72kx69_2560x1600.png",
+                "useWallpaperColors": true
+            }
         ],
         "fillColor": "#000000",
         "fillMode": "crop",
