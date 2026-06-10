@@ -5,7 +5,6 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
   function pushdots
     cd ~/dotfiles
     git add .
-    # If you don't type a message, it defaults to "update dotfiles"
     if test -n "$argv"
         git commit -m "$argv"
     else
