@@ -24,7 +24,7 @@ function turbo
             echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo >/dev/null
             echo "Turbo Boost: OFF"
 
-        case status
+        case qm
             set state (cat /sys/devices/system/cpu/intel_pstate/no_turbo)
 
             if test "$state" = "0"
