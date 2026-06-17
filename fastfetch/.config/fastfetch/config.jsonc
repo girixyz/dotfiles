@@ -12,36 +12,37 @@
             "right": 8
         },
         "color": {
-            "1": "green",
+            "1": "white",
             "2": "white",
-            "3": "38;2;115;140;115"
+            "3": "white"
         }
   },
   "modules": [
         {
             "type": "os",
             "key": "󰣇",
-            "keyColor": "38;2;115;140;115"
+            "keyColor": "white"
         },
         {
             "type": "kernel",
             "key": "",
-            "keyColor": "38;2;115;140;115"
+            "keyColor": "white"
         },
 {
             "type": "bios",
             "key": "󰍛",
-            "keyColor": "38;2;115;140;115"
+            "keyColor": "white"
         },
         {
             "type": "wm",
             "key": "󰖲",
-            "keyColor": "38;2;115;140;115"
+            "keyColor": "white"
         },
 {
             "type": "battery",
             "key": "󰂎",
-            "keyColor": "38;2;115;140;115"
+            "keyColor": "white",
+            "outputColor": "white"
         },
 
     ]
