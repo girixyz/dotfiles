@@ -78,7 +78,7 @@
         "showCapsule": false,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
-        "useSeparateOpacity": true,
+        "useSeparateOpacity": false,
         "widgetSpacing": 6,
         "widgets": {
             "center": [
@@ -690,6 +690,20 @@
                     "#ffb4ab"
                 ],
                 "path": "/home/girishan/Pictures/Wallpapers/wallhaven-72kx69_2560x1600.png",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Ayu",
+                "darkMode": true,
+                "generationMethod": "monochrome",
+                "paletteColors": [
+                    "#ffffff",
+                    "#c6c6c6",
+                    "#e2e2e2",
+                    "#ffb4ab"
+                ],
+                "path": "/home/girishan/Pictures/Wallpapers/spider-noir-2026-5120x2880-24881.jpg",
                 "useWallpaperColors": true
             }
         ],
