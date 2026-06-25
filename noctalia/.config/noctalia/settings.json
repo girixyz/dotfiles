@@ -705,6 +705,20 @@
                 ],
                 "path": "/home/girishan/Pictures/Wallpapers/spider-noir-2026-5120x2880-24881.jpg",
                 "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Ayu",
+                "darkMode": true,
+                "generationMethod": "monochrome",
+                "paletteColors": [
+                    "#ffffff",
+                    "#c6c6c6",
+                    "#e2e2e2",
+                    "#ffb4ab"
+                ],
+                "path": "/home/girishan/Pictures/Wallpapers/wp5679143-black-oled-4k-wallpapers.jpg",
+                "useWallpaperColors": true
             }
         ],
         "fillColor": "#000000",
