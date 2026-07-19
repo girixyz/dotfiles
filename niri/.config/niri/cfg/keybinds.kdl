@@ -16,18 +16,19 @@ binds {
     Mod+E                               hotkey-overlay-title="File Manager: Nautilus" { spawn "nautilus"; }
 
     // ─── Media Controls ───
-    XF86AudioRaiseVolume                allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume increase"; }
-    XF86AudioLowerVolume                allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume decrease"; }
-    XF86AudioMute                       allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume muteOutput"; }
-    XF86AudioMicMute                    allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume muteInput"; }
-    XF86AudioNext                       allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call media next"; }
-    XF86AudioPrev                       allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call media previous"; }
-    XF86AudioPlay                       allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call media playPause"; }
-    XF86AudioPause                      allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call media playPause"; }
+XF86AudioRaiseVolume    allow-when-locked=true { spawn-sh "noctalia msg volume-up"; }
+XF86AudioLowerVolume    allow-when-locked=true { spawn-sh "noctalia msg volume-down"; }
+XF86AudioMute           allow-when-locked=true { spawn-sh "noctalia msg volume-mute"; }
+XF86AudioMicMute        allow-when-locked=true { spawn-sh "noctalia msg mic-mute"; }
+
+XF86AudioNext           allow-when-locked=true { spawn-sh "noctalia msg media-next"; }
+XF86AudioPrev           allow-when-locked=true { spawn-sh "noctalia msg media-previous"; }
+XF86AudioPlay           allow-when-locked=true { spawn-sh "noctalia msg media-play-pause"; }
+XF86AudioPause          allow-when-locked=true { spawn-sh "noctalia msg media-play-pause"; }
 
     // ─── Brightness Controls ───
-    XF86MonBrightnessUp                 allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call brightness increase"; }
-    XF86MonBrightnessDown               allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call brightness decrease"; }
+XF86MonBrightnessUp    allow-when-locked=true { spawn-sh "noctalia msg brightness-up 2"; }
+XF86MonBrightnessDown  allow-when-locked=true { spawn-sh "noctalia msg brightness-down 2"; }
 
     // ─── Window Movement and Focus ───
     Mod+Q                               { close-window; }
@@ -127,17 +128,27 @@ binds {
     Mod+C { spawn "alacritty"; } // terminal
     Mod+Shift+S { screenshot; }  // screenshot
     Print { screenshot-screen; }
-    Mod+S { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; } //launcher
-    Mod+V { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:clipboard" "toggle"; } //clipboard
+    Mod+S { spawn "noctalia" "msg" "panel-toggle" "launcher"; } //launcher
+    Mod+V {spawn "noctalia" "msg" "panel-toggle" "clipboard";}
 
 
     Mod+Tab { toggle-overview; }
     Mod+M { maximize-window-to-edges; } //window maximize
 
-    Alt+F9 { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:screen-recorder" "toggle"; }
-    Alt+F10 { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:screen-recorder" "saveReplay"; }
 
 
+
+Alt+F9 {
+    spawn-sh "noctalia msg plugin noctalia/screen_recorder:service all toggle"
+}
+
+Alt+F10 {
+    spawn-sh "noctalia msg plugin noctalia/screen_recorder:service all replay-toggle"
+}
+
+Alt+F11 {
+    spawn-sh "noctalia msg plugin noctalia/screen_recorder:service all replay-save"
+}
 
   // awcc thermal profiles
     Mod+Shift+C { spawn "bash" "-c" "awcc c && notify-send 'AWCC' '❄️ Cool Mode'"; }
