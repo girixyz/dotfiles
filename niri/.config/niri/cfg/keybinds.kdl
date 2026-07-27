@@ -34,6 +34,8 @@ XF86MonBrightnessDown  allow-when-locked=true { spawn-sh "noctalia msg brightnes
     Mod+Q                               { close-window; }
     Mod+Right                           { focus-column-right; }
     Mod+Left                           { focus-column-left; }
+    Mod+D                           { focus-column-right; }
+    Mod+A                           { focus-column-left; }
     Mod+CTRL+Left                       { move-column-left; }
     Mod+CTRL+H                          { move-column-left; }
     Mod+CTRL+Right                      { move-column-right; }
