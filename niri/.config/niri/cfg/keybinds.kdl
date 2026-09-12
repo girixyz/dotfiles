@@ -9,7 +9,7 @@ binds {
     Mod+Shift+ESCAPE                     { show-hotkey-overlay; }
 
     // ─── Applications ───
-    Mod+L                               hotkey-overlay-title="Lock Screen: noctalia lock" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
+   // Mod+L                               hotkey-overlay-title="Lock Screen: noctalia lock" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
     Alt+Shift+F4                         hotkey-overlay-title="Session Menu: noctalia sessionMenu" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
 
     // Please choose your own file manager.
@@ -137,6 +137,7 @@ XF86MonBrightnessDown  allow-when-locked=true { spawn-sh "noctalia msg brightnes
     Mod+Tab { toggle-overview; }
     Mod+M { maximize-window-to-edges; } //window maximize
 
+Mod+L { spawn "noctalia" "msg" "session" "lock"; }
 
 
 
