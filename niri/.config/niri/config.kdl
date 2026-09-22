@@ -17,7 +17,6 @@ screenshot-path "/home/girishan/Pictures/Screenshots/Screenshot from %Y-%m-%d %H
 environment {
     XDG_MENU_PREFIX "arch-"
 }
-
 window-rule {
     match app-id="^Alacritty$"
     background-effect {
@@ -31,6 +30,7 @@ layer-rule {
         blur false
     }
 }
+
 
 
 
