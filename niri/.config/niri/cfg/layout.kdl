@@ -6,8 +6,8 @@ layout {
 
     // Active window highlight
     focus-ring {
-        width 1
-        active-color "#90EE90"   // Color for the window you are currently using
+        width 3
+        active-color "#FFFF00"   // Color for the window you are currently using
         inactive-color "#1e2030" // Color for the background windows
     }
 
