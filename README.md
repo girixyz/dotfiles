@@ -1,5 +1,5 @@
 # CachyOS + Niri + Noctalia v5
+Preview:
+<img width="1728" height="1728" alt="showcase" src="https://github.com/user-attachments/assets/80a1ca03-fbcf-4775-88f0-be25f5a28003" />
 
-Screenshots:
-<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/edfb436d-c37e-4521-afca-b7fe4a0cf779" />
-<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/ef0afa3e-1633-4300-95d5-267e05dc1956" />
+
