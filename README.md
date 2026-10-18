@@ -1,7 +1,5 @@
-# CachyOS + Niri + Noctalia v5
+# CachyOS + Niri/umbriel + Noctalia v5
+<img width="540" height="337" alt="dot" src="https://github.com/user-attachments/assets/f09f7199-4113-4ac2-9187-ceb0b912fc4a" />
 
-A preview of my linux ricing:
-
-<img width="1728" height="1728" alt="showcase" src="https://github.com/user-attachments/assets/80a1ca03-fbcf-4775-88f0-be25f5a28003" />
 
 
