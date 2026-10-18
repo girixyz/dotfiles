@@ -99,7 +99,7 @@ size = 20
 "Mod+Tab" = { action = "overview-toggle", repeat = false }
 "Mod+Shift+S" = { action = "spawn:noctalia msg screenshot-region", repeat = false }
 "Print" = { action = "spawn:noctalia msg screenshot-fullscreen", repeat = false }
-
+"Mod+V" = { action = "spawn:noctalia msg panel-toggle clipboard", repeat = false }
 # Screen recording
 "Alt+F9" = { action = "spawn:noctalia msg plugin noctalia/screen_recorder:service all toggle", repeat = false }
 "Alt+F10" = { action = "spawn:noctalia msg plugin noctalia/screen_recorder:service all replay-toggle", repeat = false }
