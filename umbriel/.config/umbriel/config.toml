@@ -90,37 +90,37 @@ size = 20
 [keybinds]
 
 # Applications and session
-"Mod+C" = { action = "spawn:alacritty", repeat = false }
-"Mod" = "spawn:noctalia msg panel-toggle launcher"
+"Mod+C" = { action = "spawn alacritty", repeat = false }
+"Mod" = "spawn 	noctalia msg panel-toggle launcher"
 "Mod+Q" = { action = "window-close", repeat = false }
 "Mod+Escape" = "session-quit"
 "Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
-"Mod+E" = { action = "spawn:thunar", repeat = false }
+"Mod+E" = { action = "spawn thunar", repeat = false }
 "Mod+Tab" = { action = "overview-toggle", repeat = false }
-"Mod+Shift+S" = { action = "spawn:noctalia msg screenshot-region", repeat = false }
-"Print" = { action = "spawn:noctalia msg screenshot-fullscreen", repeat = false }
-"Mod+V" = { action = "spawn:noctalia msg panel-toggle clipboard", repeat = false }
+"Mod+Shift+S" = { action = "spawn noctalia msg screenshot-region", repeat = false }
+"Print" = { action = "spawn noctalia msg screenshot-fullscreen", repeat = false }
+"Mod+V" = { action = "spawn noctalia msg panel-toggle clipboard", repeat = false }
 
 # AWCC thermal profiles
-"Mod+Shift+C" = "spawn:bash -c 'awcc c && notify-send \"AWCC\" \"Cool Mode\"'"
-"Mod+Shift+G" = "spawn:bash -c 'awcc gmode && notify-send \"AWCC\" \"G-Mode\"'"
-"Mod+Shift+B" = "spawn:bash -c 'awcc b && notify-send \"AWCC\" \"Balanced Mode\"'"
+"Mod+Shift+C" = "spawn bash -c 'awcc c && notify-send \"AWCC\" \"Cool Mode\"'"
+"Mod+Shift+G" = "spawn bash -c 'awcc gmode && notify-send \"AWCC\" \"G-Mode\"'"
+"Mod+Shift+B" = "spawn bash -c 'awcc b && notify-send \"AWCC\" \"Balanced Mode\"'"
 
 # Screen recording
-"Alt+F9" = { action = "spawn:noctalia msg plugin noctalia/screen_recorder:service all toggle", repeat = false }
-"Alt+F10" = { action = "spawn:noctalia msg plugin noctalia/screen_recorder:service all replay-toggle", repeat = false }
-"Alt+F11" = { action = "spawn:noctalia msg plugin noctalia/screen_recorder:service all replay-save", repeat = false }
+"Alt+F9" = { action = "spawn noctalia msg plugin noctalia/screen_recorder:service all toggle", repeat = false }
+"Alt+F10" = { action = "spawn noctalia msg plugin noctalia/screen_recorder:service all replay-toggle", repeat = false }
+"Alt+F11" = { action = "spawn noctalia msg plugin noctalia/screen_recorder:service all replay-save", repeat = false }
 
 # Media, volume and brightness keys from any input device, routed through the
-"XF86AudioRaiseVolume" = { action = "spawn:noctalia msg volume-up", allow_when_locked = true }
-"XF86AudioLowerVolume" = { action = "spawn:noctalia msg volume-down", allow_when_locked = true }
-"XF86AudioMute" = { action = "spawn:noctalia msg volume-mute", allow_when_locked = true, repeat = false }
-"XF86AudioPlay" = { action = "spawn:noctalia msg media toggle", allow_when_locked = true, repeat = false }
-"XF86AudioNext" = { action = "spawn:noctalia msg media next", allow_when_locked = true }
-"XF86AudioPrev" = { action = "spawn:noctalia msg media previous", allow_when_locked = true }
-"XF86MonBrightnessUp" = { action = "spawn:noctalia msg brightness-up", allow_when_locked = true }
-"XF86MonBrightnessDown" = { action = "spawn:noctalia msg brightness-down", allow_when_locked = true }
-"XF86AudioMicMute" = { action = "spawn:wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle", allow_when_locked = true }
+"XF86AudioRaiseVolume" = { action = "spawn noctalia msg volume-up", allow_when_locked = true }
+"XF86AudioLowerVolume" = { action = "spawn noctalia msg volume-down", allow_when_locked = true }
+"XF86AudioMute" = { action = "spawn noctalia msg volume-mute", allow_when_locked = true, repeat = false }
+"XF86AudioPlay" = { action = "spawn noctalia msg media toggle", allow_when_locked = true, repeat = false }
+"XF86AudioNext" = { action = "spawn noctalia msg media next", allow_when_locked = true }
+"XF86AudioPrev" = { action = "spawn noctalia msg media previous", allow_when_locked = true }
+"XF86MonBrightnessUp" = { action = "spawn noctalia msg brightness-up", allow_when_locked = true }
+"XF86MonBrightnessDown" = { action = "spawn noctalia msg brightness-down", allow_when_locked = true }
+"XF86AudioMicMute" = { action = "spawn wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle", allow_when_locked = true }
 
 # Focus and movement
 "Mod+Left" = "window-focus-left"
@@ -143,7 +143,7 @@ size = 20
 "Mod+Period" = "window-consume-right"
 "Mod+Ctrl+Comma" = "window-consume-from-left"
 "Mod+Ctrl+Period" = "window-consume-from-right"
-"Alt+Tab" = "spawn:noctalia msg window-switcher hold"
+"Alt+Tab" = "spawn noctalia msg window-switcher hold"
 # Needs layout.mode = "dwindle".
 # "Mod+Alt+T" = "layout-toggle-split"
 "Mod+W" = { action = "column-toggle-tabbed", repeat = false }
@@ -152,24 +152,24 @@ size = 20
 "Mod+O" = { action = "overview-toggle", repeat = false }
 
 # Workspaces
-"Mod+1" = "workspace-switch:1"
-"Mod+2" = "workspace-switch:2"
-"Mod+3" = "workspace-switch:3"
-"Mod+4" = "workspace-switch:4"
-"Mod+5" = "workspace-switch:5"
-"Mod+6" = "workspace-switch:6"
-"Mod+7" = "workspace-switch:7"
-"Mod+8" = "workspace-switch:8"
-"Mod+9" = "workspace-switch:9"
-"Mod+Shift+1" = "window-move-to-workspace:1"
-"Mod+Shift+2" = "window-move-to-workspace:2"
-"Mod+Shift+3" = "window-move-to-workspace:3"
-"Mod+Shift+4" = "window-move-to-workspace:4"
-"Mod+Shift+5" = "window-move-to-workspace:5"
-"Mod+Shift+6" = "window-move-to-workspace:6"
-"Mod+Shift+7" = "window-move-to-workspace:7"
-"Mod+Shift+8" = "window-move-to-workspace:8"
-"Mod+Shift+9" = "window-move-to-workspace:9"
+"Mod+1" = "workspace-switch 1"
+"Mod+2" = "workspace-switch 2"
+"Mod+3" = "workspace-switch 3"
+"Mod+4" = "workspace-switch 4"
+"Mod+5" = "workspace-switch 5"
+"Mod+6" = "workspace-switch 6"
+"Mod+7" = "workspace-switch 7"
+"Mod+8" = "workspace-switch 8"
+"Mod+9" = "workspace-switch 9"
+"Mod+Shift+1" = "window-move-to-workspace 1"
+"Mod+Shift+2" = "window-move-to-workspace 2"
+"Mod+Shift+3" = "window-move-to-workspace 3"
+"Mod+Shift+4" = "window-move-to-workspace 4"
+"Mod+Shift+5" = "window-move-to-workspace 5"
+"Mod+Shift+6" = "window-move-to-workspace 6"
+"Mod+Shift+7" = "window-move-to-workspace 7"
+"Mod+Shift+8" = "window-move-to-workspace 8"
+"Mod+Shift+9" = "window-move-to-workspace 9"
 
 # Move focused window between workspaces
 "Mod+Ctrl+Down" = "window-move-to-workspace-next"
