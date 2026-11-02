@@ -87,6 +87,10 @@ follows_mouse = true
 theme = "Bibata-Modern-Ice"
 size = 20
 
+[input.touchpad]
+natural_scroll = true
+# sensitivity = 0.5
+scroll_factor = 0.2
 [keybinds]
 
 # Applications and session
