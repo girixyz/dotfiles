@@ -37,7 +37,7 @@ border_width = 3
 outer_border_width = 0
 
 [colors.border]
-focused = "#abbcda"
+focused = "#ffb09c"
 unfocused = "#1e2030FF"
 
 # ==============================================================================
@@ -99,7 +99,7 @@ scroll_factor = 0.2
 "Mod+Q" = { action = "window-close", repeat = false }
 "Mod+Escape" = "session-quit"
 "Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
-"Mod+E" = { action = "spawn thunar", repeat = false }
+"Mod+E" = { action = "spawn luciole", repeat = false }
 "Mod+Tab" = { action = "overview-toggle", repeat = false }
 "Mod+Shift+S" = { action = "spawn noctalia msg screenshot-region", repeat = false }
 "Print" = { action = "spawn noctalia msg screenshot-fullscreen", repeat = false }
